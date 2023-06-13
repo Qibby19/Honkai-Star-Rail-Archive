@@ -1,0 +1,609 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+/* Set body font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #060b29;
+    height: 100%;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1135;
+    color: white;
+    padding: 1px;
+}
+
+/* image styles */
+.logo img {
+    height: 200px;
+}
+
+/* navigation styles */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    color: white;
+}
+
+.back {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main h2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: #060b29;
+    border: 1px white solid;
+    color: white;
+}
+
+select {
+    background-color: #060b29;
+    border: 1px white solid;
+    color: white;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.stats ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+    font-weight: bold;
+    gap: 30px;
+    row-gap: 100px;
+}
+
+.stats li {
+    margin-left: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.leftside input {
+    width: 30px;
+}
+
+.leftside {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+}
+
+
+
+.rightside {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.rightside li {
+    list-style: none;
+}
+
+.content3 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.buttonsave {
+    padding: 10px;
+    background-color: #1d1135;
+    color: white;
+    border: 1px white solid;
+}
+
+.buttonsave:hover {
+    color: #1d1135;
+    background-color: white;
+}
+
+.buttonsave:active {
+    color: white;
+    background-color: #1d1135;
+}
+
+.buttonload {
+    padding: 10px;
+    background-color: #1d1135;
+    color: white;
+    border: 1px white solid;
+}
+
+.buttonload:hover {
+    color: #1d1135;
+    background-color: white;
+}
+
+.buttonload:active {
+    color: white;
+    background-color: #1d1135;
+}
+
+/* The Modal (background) */
+.savemodal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.savemodalc {
+    background-color: #1d1135;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 15%;
+    /* Could be more or less, depending on screen size */
+}
+
+.savemodalc li {
+    list-style: none;
+}
+
+.savemodalc ul input {
+    border: none;
+    background-color: #1d1135;
+    width: 100px;
+}
+
+/* The Close Button */
+.saveclose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.saveclose:hover,
+.saveclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonsavec {
+    padding: 10px;
+    background-color: #1d1135;
+    color: white;
+    border: 1px white solid;
+}
+
+.buttonsavec:hover {
+    color: #1d1135;
+    background-color: white;
+}
+
+.buttonsavec:active {
+    color: white;
+    background-color: #1d1135;
+}
+
+.savename {
+    height: 35px;
+    width: 150px;
+}
+
+/* The Modal (background) */
+.loadmodal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.loadmodalc {
+    background-color: #1d1135;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 15%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.loadclose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.loadclose:hover,
+.laodclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.getstuff {
+    margin-top: 10px;
+}
+
+.getstuff table {
+    color: white;
+}
+
+.buttonloadc {
+    padding: 10px;
+    background-color: #1d1135;
+    color: white;
+    border: 1px white solid;
+    width: 100px;
+
+}
+
+.buttonloadc:hover {
+    color: #1d1135;
+    background-color: white;
+}
+
+.buttonloadc:active {
+    color: white;
+    background-color: #1d1135;
+}
+
+@media only screen and (max-width: 2000px) {
+
+    .savemodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .loadmodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        /* Could be more or less, depending on screen size */
+    }
+
+}
+
+@media only screen and (max-width: 1920px) {
+
+    .calc {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .savemodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .loadmodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        /* Could be more or less, depending on screen size */
+    }
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .savemodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .loadmodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+        /* Could be more or less, depending on screen size */
+    }
+
+}
+
+@media only screen and (max-width: 1010px) {
+
+    .savemodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .loadmodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        /* Could be more or less, depending on screen size */
+    }
+
+}
+
+@media only screen and (max-width: 870px) {
+
+    .calc {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .content1 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .savemodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .loadmodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        /* Could be more or less, depending on screen size */
+    }
+
+}
+
+@media only screen and (max-width: 610px) {
+
+    .savemodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .loadmodalc {
+        background-color: #1d1135;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .savemodalc ul input {
+        border: none;
+        background-color: #1d1135;
+        width: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #1d1135;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    
+
+    .logo {
+        display: none;
+    }
+
+    .calc {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .content1 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #1d1135;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .content1 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .charimg img{
+        width: 250px;
+    }
+
+    .stats input {
+        width: 100px;
+    }
+
+    .stats {
+        font-size: 13px;
+    }
+
+    .calc {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .calc input  {
+        width: 100px;
+    }
+    
+
+}

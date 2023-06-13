@@ -1,0 +1,293 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+/* Set body font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #060b29;
+  height: 100%;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1135;
+  color: white;
+  padding: 1px;
+}
+
+/* image styles */
+.logo img {
+  height: 200px;
+}
+
+/* navigation styles */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main h2 {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content {
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: .25rem;
+  justify-content: center;
+}
+
+.eventbox {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+
+.eventbox h3 {
+  margin-bottom: 20px;
+}
+
+.event1 {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding-left: 20px;
+  background-image: url('https://images.mobilemeta.gg/starrail/images/events/banners/1.1/silver-wolf_banner_title.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+  background-size: 150px;
+  margin-bottom: 5px;
+}
+
+.event1 ul {
+  list-style: none;
+}
+
+.event1 span {
+  background-color: #060b29;
+}
+
+.event2 {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding-left: 20px;
+  background-image: url('https://images.mobilemeta.gg/starrail/images/events/banners/1.1/incessant-rain_banner_title.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  display: block;
+  padding-right: 160px;
+  padding-bottom: 10px;
+  background-size: 150px;
+  margin-bottom: 5px;
+}
+
+.event2 ul {
+  list-style: none;
+}
+
+.event2 span {
+  background-color: #060b29;
+}
+
+.event3 {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding-left: 20px;
+  background-image: url('https://images.mobilemeta.gg/starrail/images/events/limited/event_boulder_town_super_league_title.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  display: block;
+  padding-bottom: 10px;
+  background-size: 150px;
+  margin-bottom: 5px;
+}
+
+.event3 ul {
+  list-style: none;
+}
+
+.event3 span {
+  background-color: #060b29;
+}
+
+.character {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  padding-left: 20px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+}
+
+.character h3 {
+  margin-bottom: 20px;
+}
+
+.char5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.char5 img {
+  border-radius: 50%;
+  border: 1px solid rgb(255, 187, 0);
+  height: 80px;
+}
+
+.char4 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.char4 img {
+  border-radius: 50%;
+  border: 1px solid rgb(98, 0, 255);
+  height: 60px;
+}
+
+.weapon {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  padding-left: 20px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.weapon h3 {
+  margin-bottom: 20px;
+}
+
+.starweap5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.starweap5 img {
+  border-radius: 1.5rem;
+  border: 1px solid rgb(255, 187, 0);
+  height: 80px;
+}
+
+.starweap4 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.starweap4 img {
+  border-radius: 1.5rem;
+  border: 1px solid rgb(98, 0, 255);
+  height: 60px;
+}
+
+@media only screen and (max-width: 1170px) {
+
+  .content {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: .25rem;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .content {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: .25rem;
+    justify-content: center;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1135;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 330px) {
+
+  .content {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: .25rem;
+    justify-content: center;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1135;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .events {
+    font-size: 13px;
+  }
+
+}
